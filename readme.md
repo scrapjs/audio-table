@@ -7,28 +7,25 @@ var table = require('audio-table');
 
 //get Float32Array of the length 1024 of the pure sine wave
 var sin = table.sin(1024);
-sin[0] === 1;
-sin[1023] === 1;
+sin[0] === 0;
+sin[256] === 1;
+sin[512] === 0;
 
 //API
-table.<waveshape>( list|length, args..., start?, end? );
+table.<waveshape>( list|length, args... );
 
 //signals
-table.sin(list|length, start?, end?);
-table.cos(list|length, start?, end?);
-table.noise(list|length, start?, end?);
-table.delta(list|length, start?, end?);
-table.pulse(list|length, start?, end?, dutyRatio);
-table.rectangle(list|length, start?, end?); // table.pulse(list|length, 0.5);
-table.triangle(list|length, start?, end?, scale);
-table.saw(list|length, start?, end?); //table.triangle(length, 0);
+table.sin(list|length);
+table.cos(list|length);
+table.noise(list|length);
+table.delta(list|length);
+table.pulse(list|length, dutyRatio);
+table.rectangle(list|length); // table.pulse(list|length, 0.5);
+table.triangle(list|length, scale);
+table.saw(list|length); //table.triangle(length, 0);
 ```
-
-## No’s
-
-* Don’t pass start/end arguments — if user need to do that, let just use subarrays. Also it complicates arguments.
-
 
 ### Related
 
+> [audio-buffer-utils](https://npmjs.org/package/audio-buffer-utils) — same functions but for audio buffers.
 > [Periodic functions](https://en.wikipedia.org/wiki/List_of_periodic_functions) — list of periodic functions on wiki
