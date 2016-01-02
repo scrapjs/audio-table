@@ -1,11 +1,12 @@
 {
   "name": "audio-table",
   "version": "1.0.0",
-  "description": "Tables of periodic signals",
+  "description": "Tables of common periodic audio signals",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
+  "files": ["index.js"],
   "scripts": {
     "test": "mocha"
   },
@@ -18,7 +19,11 @@
     "audio",
     "pcm",
     "signal",
-    "buffer"
+    "buffer",
+    "periodic",
+    "generator",
+    "sample",
+    "wavetable"
   ],
   "author": "Deema Yvanow <dfcreative@gmail.com>",
   "license": "MIT",

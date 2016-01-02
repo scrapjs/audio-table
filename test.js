@@ -1,6 +1,6 @@
 var assert = require('assert');
 var test = it;
-var table = require('../');
+var table = require('./');
 var almost = require('almost-equal');
 
 test('sin', function () {
@@ -55,6 +55,14 @@ test('triangle', function () {
 test('saw', function () {
 	var saw = table.saw(8);
 	assert.equal(saw[0], 1);
-	//FIXME: bad inprecision, but that is aliasing
-	assert.equal(saw[7], -0.75);
+	assert.equal(saw[7], -1);
+});
+
+test('pass table', function () {
+	var saw = table.saw(new Float64Array(120));
+	var sin = table.sin(new Float64Array(120));
+	var cos = table.cos(new Float64Array(120));
+	var triangle = table.triangle(new Float64Array(120));
+	var pulse = table.pulse(new Float64Array(120));
+	var noise = table.noise(new Float64Array(120));
 });
