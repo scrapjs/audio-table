@@ -1,0 +1,33 @@
+{
+  "name": "audio-table",
+  "version": "1.0.0",
+  "description": "Tables of periodic signals",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/audio-lab/table.git"
+  },
+  "keywords": [
+    "sound",
+    "audio",
+    "pcm",
+    "signal",
+    "buffer"
+  ],
+  "author": "Deema Yvanow <dfcreative@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/audio-lab/table/issues"
+  },
+  "homepage": "https://github.com/audio-lab/table#readme",
+  "devDependencies": {
+    "almost-equal": "^1.0.0",
+    "mocha": "^2.3.4"
+  }
+}
