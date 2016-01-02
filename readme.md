@@ -20,7 +20,7 @@ table.cos(list|length);
 table.noise(list|length);
 table.delta(list|length);
 table.pulse(list|length, dutyRatio);
-table.rectangle(list|length); // table.pulse(list|length, 0.5);
+table.square(list|length); // table.pulse(list|length, 0.5);
 table.triangle(list|length, scale);
 table.saw(list|length); //table.triangle(length, 0);
 ```

@@ -33,12 +33,12 @@ test('pulse', function () {
 	assert.equal(pulse[9], -1);
 });
 
-test('rectangle', function () {
-	var rectangle = table.rectangle(10);
-	assert.equal(rectangle[0], 1);
-	assert.equal(rectangle[4], 1);
-	assert.equal(rectangle[5], -1);
-	assert.equal(rectangle[9], -1);
+test('square', function () {
+	var square = table.square(10);
+	assert.equal(square[0], 1);
+	assert.equal(square[4], 1);
+	assert.equal(square[5], -1);
+	assert.equal(square[9], -1);
 });
 
 test('triangle', function () {

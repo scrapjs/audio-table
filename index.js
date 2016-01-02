@@ -8,7 +8,7 @@ module.exports = {
 	cos: cos,
 	saw: saw,
 	triangle: triangle,
-	rectangle: rectangle,
+	square: square,
 	delta: delta,
 	pulse: pulse,
 	noise: noise,
@@ -77,7 +77,7 @@ function pulse (arg, weight) {
 }
 
 
-function rectangle (arg) {
+function square (arg) {
 	return pulse(arg, 0.5);
 };
 
