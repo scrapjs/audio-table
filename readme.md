@@ -27,5 +27,7 @@ table.saw(list|length); //table.triangle(length, 0);
 
 ### Related
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/audiojs/audio-table.svg)](https://greenkeeper.io/)
+
 > [audio-buffer-utils](https://npmjs.org/package/audio-buffer-utils) — same functions but for audio buffers.<br/>
 > [Periodic functions](https://en.wikipedia.org/wiki/List_of_periodic_functions) — list of periodic functions on wiki.<br/>
