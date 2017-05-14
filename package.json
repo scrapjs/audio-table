@@ -35,6 +35,6 @@
   "homepage": "https://github.com/audiojs/audio-table#readme",
   "devDependencies": {
     "almost-equal": "^1.0.0",
-    "mocha": "^3.0.2"
+    "mocha": "^3.4.0"
   }
 }
